@@ -1,0 +1,10 @@
+
+Dynamic Node Prioritization is a novel neural network optimization method that aims to reduce the memory footprint of AI models while maintaining high performance. The core idea behind DNP is to dynamically adjust the priority of nodes within the network based on their contribution to the overall performance of the model. By focusing computational resources on the most critical nodes, DNP enables AI models to run on minimal CPU memory without significant performance loss.
+
+	DNP has three main steps:
+
+1. Node Importance Calculation: During the initial training phase, the DNP algorithm calculates the importance of each node in the network based on the magnitude of its incoming and outgoing weights, as well as the gradients of the loss function. Nodes with high importance scores contribute more to the model's overall performance and are prioritized for computational resources.
+
+2. Dynamic Node Activation: During the inference phase, the DNP algorithm activates only a subset of nodes based on their importance scores and the current input data. The most critical nodes are always activated, while less important nodes may be activated or deactivated depending on their relevance to the specific input. This dynamic activation approach allows the model to adapt its computational complexity on-the-fly, reducing the memory footprint without compromising performance.
+
+3. Periodic Importance Updates: To maintain model adaptability and account for potential shifts in the data distribution, the DNP algorithm periodically recalculates node importance scores based on the most recent training data. This ensures that the model remains focused on the most relevant nodes for the current problem space, further optimizing memory usage and performance.

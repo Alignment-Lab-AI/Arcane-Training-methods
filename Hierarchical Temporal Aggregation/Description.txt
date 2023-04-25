@@ -1,0 +1,9 @@
+Temporal Aggregation: Divide the input sequence into non-overlapping, equally-sized segments. For each segment, compute an aggregated representation that captures the most salient information.
+
+Hierarchical Model Training: Train a hierarchical AI model that learns to process the aggregated representations from step 1. The model should be designed with multiple levels, where each level operates at a different time scale, allowing the model to capture both local and global patterns in the data.
+
+Inference Scaling: During inference, the hierarchical model can quickly process the aggregated representations, reducing the required computations as the sequence length increases. This enables more efficient scaling of inference with longer sequences.
+
+Reverse Mapping: Implement a reverse mapping process to transform the model's output back to the original sequence length. This allows for the generation of predictions at the same granularity as the input data.
+
+Evaluation and Iteration: Evaluate the performance of the hierarchical model using standard evaluation metrics. If necessary, repeat steps 1-4 with different aggregation schemes, model architectures, or reverse mapping techniques to improve the model's performance.

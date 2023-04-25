@@ -1,0 +1,14 @@
+Data Shuffling: Shuffle the entire training dataset to ensure a random order of samples.
+
+Sample Selection: Select an initial small subset of samples from the shuffled dataset to be used for the first round of training.
+
+Model Training: Train an AI model on the selected subset of samples using any existing supervised or unsupervised learning techniques.
+
+Incremental Expansion: Incrementally expand the training subset by adding a fixed number of new samples from the shuffled dataset.
+
+Repeated Training: Retrain the model on the expanded training subset, using a smaller learning rate than in the previous round to avoid overwriting previously learned patterns.
+
+Evaluation and Iteration: Evaluate the model's performance using standard evaluation metrics. If the performance has not yet reached the desired level, repeat steps 4 and 5 until the entire dataset has been incorporated into the training process or the desired performance is achieved.
+
+
+This method is intended to be used with my sparsity stack, which removes suboptimal weights with a high degree of presicion and granularity, especially over iterations of the same data with only small changes. if you do this with no sparsification at all, you may wind up with a very bloated (or very generally skillful) model
