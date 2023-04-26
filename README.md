@@ -1,5 +1,5 @@
 # Arcane-Training-methods
-New Training methods ive been workshopping for the /webgrip/omniswarm foundation model
+New Training methods ive been workshopping for the omniswarm foundation model
 
 #disclaimer
 
